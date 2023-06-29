@@ -1,2 +1,2 @@
-//
-bool test_config();
+#include <string>
+bool is_palindrome(const std::string& str);

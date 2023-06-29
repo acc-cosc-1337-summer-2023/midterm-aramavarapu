@@ -2,11 +2,8 @@
 #include "catch.hpp"
 #include "question2.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
-
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Test binary_to_decimal function", "verification") {
+    REQUIRE(binary_to_decimal("00001010") == 10);
+    REQUIRE(binary_to_decimal("10101010") == 170);
+    REQUIRE(binary_to_decimal("11111111") == 255);
 }

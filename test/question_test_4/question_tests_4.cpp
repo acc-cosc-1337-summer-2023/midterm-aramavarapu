@@ -2,11 +2,9 @@
 #include "catch.hpp"
 #include "question4.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
-
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Test is_palindrome function", "verification") {
+    REQUIRE(is_palindrome("abcba") == true);
+    REQUIRE(is_palindrome("abc") == false);
+    REQUIRE(is_palindrome("hannah") == true);
+	REQUIRE(is_palindrome("hanna") == false);
 }

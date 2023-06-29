@@ -1,6 +1,7 @@
 #include "question1.h"
-
-bool test_config()
-{
-    return true;
+#include <iostream>
+#include <cstdlib>
+int roll_die() {
+    int result = (std::rand() % 6) + 1;
+    return result;
 }

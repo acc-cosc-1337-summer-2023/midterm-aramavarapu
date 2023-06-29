@@ -2,11 +2,12 @@
 #include "catch.hpp"
 #include "question1.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
-
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Test function roll_die", "verification") {
+    const int rolls = 10;
+  
+    for (int i = 0; i < rolls; ++i) {
+        int result = roll_die();
+        REQUIRE(result >= 1);
+        REQUIRE(result <= 6);
+    }
 }

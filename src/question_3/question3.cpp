@@ -1,6 +1,9 @@
 #include "question3.h"
+#include <iostream>
+void valueParameter(int value) {
+    value = 10;  
+}
 
-bool test_config()
-{
-    return true;
+void referenceParameter(int& reference) {
+    reference = 30;  
 }

@@ -1,1 +1,3 @@
-bool test_config();
+#include <iostream>
+#include <cstdlib>
+int roll_die();

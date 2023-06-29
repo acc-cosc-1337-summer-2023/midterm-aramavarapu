@@ -1,1 +1,3 @@
-bool test_config();
+#include <iostream>
+void valueParameter(int value);
+void referenceParameter(int& reference);

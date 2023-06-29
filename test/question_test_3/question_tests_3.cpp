@@ -2,11 +2,12 @@
 #include "catch.hpp"
 #include "question3.h"
 
-TEST_CASE("Verify Test Configuration", "verification") {
-	REQUIRE(true == true);
-}
+TEST_CASE("Test valueParameter and referenceParameter functions", "verification") {
+    int value1 = 1;
+    valueParameter(value1);
+    REQUIRE(value1 == 1);
 
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+    int value2 = 1;
+    referenceParameter(value2);
+    REQUIRE(value2 == 30);
 }
